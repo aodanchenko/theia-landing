@@ -19,7 +19,8 @@ p{margin:0}
 .sc{font-variant:small-caps;letter-spacing:.06em;text-transform:lowercase}
 .mast{text-align:center}
 .mast .name{font:500 clamp(56px,9vw,104px)/1 'CMU Serif',Georgia,serif;letter-spacing:-.01em}
-.mast .dl{display:flex;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;margin-top:18px;padding:8px 0;border-top:1px solid var(--ink);border-bottom:3px double var(--ink);font-size:16px}
+.mast .dl{display:flex;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;margin-top:18px;padding:8px 0;border-top:1px solid var(--ink);border-bottom:3px double var(--ink);font-size:16px;font-weight:700}
+@media (max-width:700px){.mast .dl{flex-direction:column;align-items:center;gap:2px}}
 .head{text-align:center;padding:48px 0 44px}
 .head h1{font-weight:500;font-size:clamp(34px,5vw,58px);line-height:1.1;max-width:18ch;margin:0 auto;letter-spacing:0;text-wrap:balance}
 .head .sub{max-width:46ch;margin:18px auto 0;font-size:20px;color:var(--muted);text-wrap:pretty}
