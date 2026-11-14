@@ -29,6 +29,18 @@ p{margin:0}
 .head .sub{max-width:46ch;margin:18px auto 0;font-size:20px;color:var(--muted);text-wrap:pretty}
 .links{display:flex;justify-content:center;gap:0 22px;flex-wrap:wrap;margin-top:12px;font-size:17px}
 .links a{padding:10px 2px}
+.team{padding:56px 0 0;border-top:1px solid oklch(0.18 0 0 / .14)}
+.team h2{font-weight:500;font-size:30px;line-height:1.15;margin:0 0 6px;text-align:center}
+.team .lede{text-align:center;color:var(--muted);font-size:17px;max-width:52ch;margin:0 auto 32px;text-wrap:pretty}
+.team .row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px 20px}
+.team .ph{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:oklch(0.9 0 0);margin-bottom:12px}
+.team img.ph{filter:grayscale(1) contrast(1.04);transition:filter 200ms ease-out}
+@media (hover:hover) and (pointer:fine){.team .p:hover img.ph{filter:none}}
+@media (prefers-reduced-motion:reduce){.team img.ph{transition:none}}
+.team .who{font-size:18px;line-height:1.25;font-weight:700}
+.team .role{font-size:15px;margin-top:2px;color:var(--muted)}
+.team .did{font-size:15px;margin-top:8px;padding-top:8px;border-top:1px solid oklch(0.18 0 0 / .14);text-wrap:pretty}
+@media (max-width:760px){.team .row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
 <body>
@@ -42,6 +54,17 @@ p{margin:0}
   <p class="sub">Theia checks your posture with a phone camera, compares it with your own normal, and tells you whether a change is expected.</p>
   <p class="links"><a href="#">Paper (PDF, 15 Nov)</a><a href="#">Slides</a><a href="#">Code</a></p>
  </main>
+ <section class="team" aria-labelledby="team-h">
+  <h2 id="team-h">Team</h2>
+  <p class="lede">Five people, 48 hours, software only.</p>
+  <div class="row">
+   <div class="p"><img class="ph" src="img/p1.jpg" alt="Name Surname" width="400" height="400" loading="lazy"><p class="who">Name Surname</p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
+   <div class="p"><img class="ph" src="img/p2.jpg" alt="Name Surname" width="400" height="400" loading="lazy"><p class="who">Name Surname</p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
+   <div class="p"><span class="ph" role="img" aria-label="Name Surname, photo coming"></span><p class="who">Name Surname</p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
+   <div class="p"><span class="ph" role="img" aria-label="Name Surname, photo coming"></span><p class="who">Name Surname</p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
+   <div class="p"><span class="ph" role="img" aria-label="Name Surname, photo coming"></span><p class="who">Name Surname</p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
+  </div>
+ </section>
 </div>
 </body>
 </html>
