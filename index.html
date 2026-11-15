@@ -53,6 +53,9 @@ p{margin:0}
 .parts .row{display:grid;grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr) 112px minmax(0,1fr);align-items:center}
 .parts .node{border:1px solid var(--ink);padding:14px 16px;min-height:100%;display:flex;flex-direction:column;justify-content:center}
 .parts .node.mid{border-width:2px}
+.parts .node{position:relative}
+.parts .node a::after{content:"";position:absolute;inset:0} /* whole box is the link */
+@media (hover:hover) and (pointer:fine){.parts .node:hover a{color:var(--acc)}}
 .parts .node b{display:block;font-size:22px;font-weight:700}
 .parts .node span{font-size:17px;color:var(--muted);text-wrap:pretty}
 .parts .arr{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:15px;color:var(--muted);line-height:1.2;padding:0 8px}
@@ -122,11 +125,11 @@ p{margin:0}
   <h2 id="parts-h" class="sc">How the three parts connect</h2>
   <figure style="margin:0">
    <div class="row">
-    <div class="node"><b>Earth app</b><span>Phone camera spots compensations in rehab squats and walks, with one tip to fix each</span></div>
+    <div class="node"><b><a href="https://theia-app.pages.dev/earth">Earth app</a></b><span>Phone camera spots compensations in rehab squats and walks, with one tip to fix each</span></div>
     <div class="arr l" aria-hidden="true">walking model<i></i></div>
-    <div class="node mid"><b>Whitepaper</b><span>Tests which body part moves off normal in a walk, and how often it is right</span></div>
+    <div class="node mid"><b><a href="theia-paper.pdf" target="_blank" rel="noopener">Whitepaper</a></b><span>Tests which body part moves off normal in a walk, and how often it is right</span></div>
     <div class="arr r" aria-hidden="true">walking model<i></i></div>
-    <div class="node"><b>Space app</b><span>Same check for crew: squats on the station, walking after landing</span></div>
+    <div class="node"><b><a href="https://theia-app.pages.dev/space">Space app</a></b><span>Same check for crew: squats on the station, walking after landing</span></div>
    </div>
    <figcaption class="cap">Tested once, used on Earth and in space.</figcaption>
   </figure>
