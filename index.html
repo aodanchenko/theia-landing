@@ -79,6 +79,14 @@ p{margin:0}
 .clin ul{list-style:none;padding:0;margin:32px auto 0;max-width:60ch;text-align:start;display:grid;gap:10px;font-size:17px}
 .clin li b{font-weight:700}
 @media (max-width:700px){.facts .row{grid-template-columns:minmax(0,1fr)}.clin .row{gap:12px}.fact b,.stat b{font-size:36px}}
+.res figure{margin:36px auto 0;max-width:520px}
+.res svg{display:block;width:100%;height:auto;font-family:inherit}
+.res svg .g{stroke:oklch(0.18 0 0 / .18);stroke-dasharray:3 4}
+.res svg .ax{fill:var(--muted);font-size:12px}
+.res svg .v{fill:var(--ink);font-size:15px;font-weight:700}
+.res svg .c{fill:var(--muted);font-size:12px;letter-spacing:.04em}
+.res figcaption{font-size:16px;margin-top:10px;text-wrap:pretty}
+.res figcaption small{display:block;margin-top:6px;font-size:13px;color:oklch(0.18 0 0 / .45)}
 .team{padding:56px 0 0;border-top:1px solid oklch(0.18 0 0 / .14)}
 .team h2{font-weight:500;font-size:30px;line-height:1.15;margin:0 0 6px;text-align:center}
 .team .lede{text-align:center;color:var(--muted);font-size:17px;max-width:52ch;margin:0 auto 32px;text-wrap:pretty}
@@ -144,6 +152,18 @@ p{margin:0}
    <li><b>Beyond static posture.</b> Movement is judged across gait phases and over time.</li>
    <li><b>Beyond correct vs. incorrect.</b> What a movement means depends on personal history, rehab stage and exercise goals.</li>
   </ul>
+ </section>
+ <section class="clin res" aria-labelledby="res-h">
+  <h2 id="res-h" class="sc">Results</h2>
+  <div class="row">
+   <div class="stat"><b>91%</b><span>shoulder alert precision</span></div>
+   <div class="stat"><b>71%</b><span>shoulder alert recall</span></div>
+   <div class="stat"><b>6,300</b><span>Earth app views on Instagram in 12 h</span></div>
+  </div>
+  <figure>
+   <svg viewBox="0 0 480 250" role="img" aria-label="Decision agreement: all test 0.804, quality-screened 0.842, retained showcase 0.951"><defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="oklch(0.85 0 0)"/><rect width="3" height="8" fill="oklch(0.55 0 0)"/></pattern></defs><line class="g" x1="60" x2="470" y1="210" y2="210"/><text class="ax" x="50" y="214" text-anchor="end">0.0</text><line class="g" x1="60" x2="470" y1="120.0" y2="120.0"/><text class="ax" x="50" y="124.0" text-anchor="end">0.5</text><line class="g" x1="60" x2="470" y1="30" y2="30"/><text class="ax" x="50" y="34" text-anchor="end">1.0</text><rect x="70" y="65.3" width="80" height="144.7" fill="var(--ink)"/><text class="v" x="110" y="57.3" text-anchor="middle">0.804</text><text class="c" x="110" y="232" text-anchor="middle">All test</text><rect x="190" y="58.4" width="80" height="151.6" fill="var(--ink)"/><text class="v" x="230" y="50.4" text-anchor="middle">0.842</text><text class="c" x="230" y="232" text-anchor="middle">Quality-screened</text><rect x="310" y="38.8" width="80" height="171.2" fill="url(#hatch)"/><text class="v" x="350" y="30.8" text-anchor="middle">0.951</text><text class="c" x="350" y="232" text-anchor="middle">Retained showcase*</text></svg>
+   <figcaption><b>Figure 2:</b> Decision agreement, statistical-pooling ensemble.<small>* Outcome-selected subset (5 clips), shown for completeness; it cannot establish generalization.</small></figcaption>
+  </figure>
  </section>
  <section class="team" aria-labelledby="team-h">
   <h2 id="team-h">Team</h2>
