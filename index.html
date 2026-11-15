@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#fdfdfd">
 <title>Theia · NASA Space Apps Challenge 2026</title>
-<meta name="description" content="Theia checks your posture with a phone camera, compares it with your own normal, and tells you whether a change is expected.">
+<meta name="description" content="After injury or spaceflight, the body compensates. Theia films a squat with a phone camera, compares each rep with your own normal, and flags maladaptive compensation: the change that should have faded by now.">
 <link href="https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/cmu-serif.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@ p{margin:0}
 @media (max-width:700px){.mast .dl{grid-template-columns:minmax(0,1fr);gap:2px}.mast .dl span{text-align:center!important}}
 .head{text-align:center;padding:48px 0 44px}
 .head h1{font-weight:500;font-size:clamp(34px,5vw,58px);line-height:1.1;max-width:18ch;margin:0 auto;letter-spacing:0;text-wrap:balance}
-.head .sub{max-width:46ch;margin:18px auto 0;font-size:20px;color:var(--muted);text-wrap:pretty}
+.head .sub{max-width:52ch;margin:18px auto 0;font-size:20px;color:var(--muted);text-wrap:pretty}
 .links{display:flex;justify-content:center;gap:0 22px;flex-wrap:wrap;margin-top:12px;font-size:17px}
 .links a{padding:10px 2px}
 .demo{padding:48px 0 56px;border-top:1px solid oklch(0.18 0 0 / .14)}
@@ -68,15 +68,13 @@ p{margin:0}
 .team{padding:56px 0 0;border-top:1px solid oklch(0.18 0 0 / .14)}
 .team h2{font-weight:500;font-size:30px;line-height:1.15;margin:0 0 6px;text-align:center}
 .team .lede{text-align:center;color:var(--muted);font-size:17px;max-width:52ch;margin:0 auto 32px;text-wrap:pretty}
-.team .row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 24px}
+.team .row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 24px;max-width:768px;margin:0 auto}
 .team .ph{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:oklch(0.9 0 0);margin-bottom:12px}
 .team .who{font-size:18px;line-height:1.25;font-weight:700;width:min-content}
 .team .p{position:relative}
 .team .who a::after{content:"";position:absolute;inset:0} /* the whole card opens LinkedIn */
 @media (hover:hover) and (pointer:fine){.team .p:hover .who a{color:var(--acc)}}
-.team .role{font-size:15px;margin-top:2px;color:var(--muted)}
 .team .note{margin-top:28px;text-align:center;font-size:15px;font-style:italic;color:var(--muted)}
-.team .did{font-size:15px;margin-top:8px;padding-top:8px;border-top:1px solid oklch(0.18 0 0 / .14);text-wrap:pretty}
 @media (max-width:760px){.team .row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
@@ -87,8 +85,8 @@ p{margin:0}
   <div class="dl sc"><span>Vienna</span><span>NASA Space Apps Challenge</span><span>14–15 November 2026</span></div>
  </header>
  <main class="head">
-  <h1>Is my body recovering normally?</h1>
-  <p class="sub">Theia checks your posture with a phone camera, compares it with your own normal, and tells you whether a change is expected.</p>
+  <h1>Adaptation or maladaptive compensation?</h1>
+  <p class="sub">After injury or spaceflight, the body compensates. Theia films a squat with a phone camera, compares each rep with your own normal, and flags <b>maladaptive compensation</b>: the change that should have faded by now.</p>
   <p class="links"><a href="theia-paper.pdf" target="_blank" rel="noopener">Paper (PDF, 15 Nov)</a><a href="#">Slides</a><a href="https://github.com/aodanchenko/theia-app">Code</a></p>
  </main>
  <section class="parts" aria-labelledby="parts-h">
@@ -117,10 +115,10 @@ p{margin:0}
   <h2 id="team-h">Team</h2>
   <p class="lede">Four people, 48 hours, software only.</p>
   <div class="row">
-   <div class="p"><img class="ph" src="img/p1.jpg" alt="Mariia Shevtsova" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/mariia-shevtsova-0751a2193/">Mariia Shevtsova</a></p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
-   <div class="p"><img class="ph" src="img/p2.jpg" alt="Anna Danchenko" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/anna-danchenko/">Anna Danchenko</a></p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
-   <div class="p"><img class="ph" src="img/p3.jpg" alt="Oleksandr Namchuk" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/oleksandr-namchuk-249488236/">Oleksandr Namchuk</a></p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
-   <div class="p"><img class="ph" src="img/p4.jpg" alt="Hlib Plakhtii" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/hlib-plakhtii/">Hlib Plakhtii</a></p><p class="role">Role</p><p class="did">One line on what they built.</p></div>
+   <div class="p"><img class="ph" src="img/p1.jpg" alt="Mariia Shevtsova" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/mariia-shevtsova-0751a2193/">Mariia Shevtsova</a></p></div>
+   <div class="p"><img class="ph" src="img/p2.jpg" alt="Anna Danchenko" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/anna-danchenko/">Anna Danchenko</a></p></div>
+   <div class="p"><img class="ph" src="img/p3.jpg" alt="Oleksandr Namchuk" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/oleksandr-namchuk-249488236/">Oleksandr Namchuk</a></p></div>
+   <div class="p"><img class="ph" src="img/p4.jpg" alt="Hlib Plakhtii" width="400" height="400" loading="lazy"><p class="who"><a href="https://www.linkedin.com/in/hlib-plakhtii/">Hlib Plakhtii</a></p></div>
   </div>
   <p class="note">Listed in no particular order; the order does not reflect contribution.</p>
  </section>
